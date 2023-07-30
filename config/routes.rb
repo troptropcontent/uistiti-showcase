@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tweets, only: [:create]
   mount Uistiti::Engine => "/uistiti"
   root to: 'pages#home'
   get '/home', to: 'pages#home', as: 'home'

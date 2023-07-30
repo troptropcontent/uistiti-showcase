@@ -1,0 +1,7 @@
+<%= form_for tweet, {data: {turbo: false}} do |f| %>
+  <%= render Uistiti::Alpha::Flex.new(direction: :column, gap: :l)  do %>
+    <%= render Uistiti::Alpha::FormInputGroup.new(form: f, type: :text_field, field: :author, label: 'Author', required: true) %>
+    <%= render Uistiti::Alpha::FormInputGroup.new(form: f, type: :text_area, field: :content, label: 'Content', required: true) %>
+    <%= render Uistiti::Alpha::FormSubmit.new(form: f, text: 'New Tweet', color: :primary) %>
+  <% end %>
+<% end %>

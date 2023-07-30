@@ -1,2 +1,6 @@
-<h1>Pages#twitter_clone</h1>
-<p>Find me in app/views/pages/twitter_clone.html.erb</p>
+<h1>New tweet</h1>
+  <%= render 'tweets/form', tweet: Tweet.new %>
+<h1>All tweets</h1>
+<%= render Uistiti::Alpha::Flex.new(direction: :column)  do %>
+  <%= render @tweets %>
+<% end %>

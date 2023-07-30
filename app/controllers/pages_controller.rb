@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def twitter_clone
+    @tweets = Tweet.all
   end
 
   def contact
