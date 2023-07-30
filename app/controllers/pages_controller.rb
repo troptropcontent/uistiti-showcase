@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def home
   end
 
-  def how_it_works
+  def twitter_clone
   end
 
   def contact
