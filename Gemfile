@@ -44,8 +44,8 @@ gem "bootsnap", require: false
 
 # Ui kit
 
-gem "uistiti", path: '../uistiti'
-# gem "uistiti"
+# gem "uistiti", path: '../uistiti'
+gem "uistiti"
 
 # Use Sass to process CSS
 gem "sassc-rails"
